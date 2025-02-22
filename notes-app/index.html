@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>JS Notes App</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+  <div class="border-2 border-black rounded-md w-[300px] h-[500px] mt-[20px] mx-auto">
+    <header>
+      <div class="border-b-2 border-slate-400 h-[50px] text-center">
+        <span id="dateTxt" class="text-red-600">
+          Δευτέρα, 25 Φεβρουαρίου 2025<br>20:05:55
+        </span>
+      </div>
+    </header>
+    <main>
+      <div id="notesWrapper" class="h-[400px] border-b-2 border-slate-400 overflow-auto">
+      </div>
+    </main>
+    <footer>
+      <div class="flex flex-row justify-between items-center h-[50px] px-[5px]">
+        <input type="text" id="inputNote" class="h-[40px] w-[180px] border rounded-md ps-[5px]" placeholder="Insert Note">
+        <button type="button" id="addNoteBtn" class="h-[40px] w-[40px] border rounded-full">+</button>
+      </div>
+    </footer>
+  </div>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="./main.js"></script>
+</body>
+</html>

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Background Changer App</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+      },
+    }
+  }
+    }
+  </script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="./main.css">
+</head>
+<body>
+  <header>
+    <nav class="flex flex-row justify-between items-center h-[50px] bg-[#212529] px-2 sticky top-0">
+      <div class="ms-[40px]">
+        <span class="text-white">Bg Color App</span>
+      </div>
+      <div class="md:hidden">
+        <button id="btnMenu" class="me-3 border px-2 py-1 rounded-md focus:border-4"><i class="fa-solid fa-bars text-white"></i></button>
+      </div>
+      <div class="hidden md:block me-5">
+        <ul class="flex flex-row">
+          <li class="me-5"><a class="text-zinc-500 hover:text-zinc-400" href="./index.html">Restricted App</a></li>
+          <li class="me-5"><a class="text-zinc-500 hover:text-zinc-400" href="./rich.html">Rich App</a></li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+  <div id="toggleNav" class="hidden bg-[#212529] md:hidden">
+    <ul class="p-3">
+      <li class=""><a class="text-zinc-500 hover:text-zinc-400" href="./index.html">Restricted App</a></li>
+      <li class=""><a class="text-zinc-500 hover:text-zinc-400" href="./rich.html">Rich App</a></li>
+    </ul>
+  </div>
+  <main>
+    <div class="flex flex-col justify-center items-center">
+      <div class="text-center bg-[#212529] text-white py-5 px-8 rounded">
+        <div class="mb-2 text-2xl">Background Color</div>
+        <div><span id="colorText" class="text-2xl">#000000</span></div>
+      </div>
+      <div class="mt-5"><button id="btnChangeBg" class="border border-[#0d6efd] py-2 px-4 rounded-md text-[#0d6efd] hover:text-white hover:bg-[#0d6efd] text-xl me-3 hover:transition-all">Click me</button></div>
+
+    </div>
+  </main>
+  <script src="./rich.js"></script>
+</body>
+</html>

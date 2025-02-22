@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+      }
+    }
+  </script>
+  
+</head>
+<body>
+   <div class="flex flex-col justify-center items-center h-svh">
+    <div class="text-center mb-5 ">
+      <div class="text-7xl font-thin mb-5">Counter</div>
+      <div class="border border-1 border-black py-1 rounded-full"><span id="counter" class="text-7xl font-thin">0</span></div>
+    </div>
+    <div class="flex flex-row">
+      <div><button id="btnDecr" class="border border-[#0d6efd] py-2 px-4 rounded-md text-[#0d6efd] hover:text-white hover:bg-[#0d6efd] text-xl me-3 hover:transition-all">Decrease</button></div>
+      <div><button id="btnReset" class="border border-[#0d6efd] py-2 px-4 rounded-md text-[#0d6efd] hover:text-white hover:bg-[#0d6efd] text-xl me-3 hover:transition-all">Reset</button></div>
+      <div><button id="btnIncr" class="border border-[#0d6efd] py-2 px-4 rounded-md text-[#0d6efd] hover:text-white hover:bg-[#0d6efd] text-xl hover:transition-all">Increase</button></div>
+    </div>
+   </div>
+
+
+  <script src="./main.js"></script>
+</body>
+</html>
