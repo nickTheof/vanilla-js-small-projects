@@ -28,7 +28,30 @@ The **Movie Search App** is a simple web application that allows users to search
 
 ---
 
+## 📝 JS Notes App
+
+### Overview
+
+The **JS Notes App** is a simple note-taking application that allows users to add, view, and delete notes. It also includes a feature to mark notes as completed (strikethrough) and displays the current date and time in Greek.
+
+### Features
+
+- **Add Notes**: Insert notes using the input field or by pressing the Enter key.
+- **Mark as Completed**: Toggle a checkbox to mark notes as completed (strikethrough).
+- **Delete Notes**: Remove notes by clicking the delete button.
+- **Real-Time Clock**: Displays the current date and time in Greek, updating every second.
+- **Responsive Design**: Built with Tailwind CSS for a clean and responsive layout.
+
+### Technologies Used
+
+- **HTML5**: For structuring the web page.
+- **Tailwind CSS**: For styling and responsive design.
+- **JavaScript (Vanilla JS)**: For dynamic functionality and state management.
+- **jQuery**: For DOM manipulation and event handling (optional, can be replaced with vanilla JS).
+
 ## 🛠️ Setup and Installation
+
+### 🎬 Movie Search App
 
 Follow these steps to set up and run the Movie Search App on your local machine.
 
@@ -83,3 +106,41 @@ Open the index.html file in your browser. You can do this by:
 3. View the movie details, including the title, year, runtime, genre, IMDb rating, and plot.
 
 4. Click the "Show More" button to reveal additional details like director, actors, and production information.
+
+### 📝 JS Notes App
+
+Follow these steps to set up and run the JS Notes App on your local machine.
+
+### Step 1: Clone the Repository
+
+Clone the repository to your local machine using the following command:
+
+```bash
+git clone git@github.com:nickTheof/vanilla-js-small-projects.git
+```
+
+### Step 2: Navigate to the Project Directory
+
+Navigate to the movies-app directory:
+
+```bash
+cd vanilla-js-projects/notes-app
+```
+
+### Step 3: Open the App in Your Browser
+
+Open the index.html file in your browser. You can do this by:
+
+- Double-clicking the index.html file in your file explorer, or
+
+- Using a live server extension in your code editor (e.g., VS Code's Live Server).
+
+### Step 4: Use the Notes App
+
+1. Enter a note in the input field and press the "+" button or the Enter key to add it.
+
+2. Toggle the checkbox to mark a note as completed (strikethrough).
+
+3. Click the "X" button to delete a note.
+
+4. The current date and time in Greek are displayed at the top and update every second.
